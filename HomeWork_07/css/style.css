@@ -1,0 +1,318 @@
+/* style.css */
+body{
+	box-sizing: border-box;
+	width: 1000px;
+	height: 600px;
+	margin: auto;
+	position: relative;
+	
+}
+
+h1{
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	margin: auto;
+	text-align: center;
+	position: fixed;
+	top: 150px;
+	left: 300px;
+	position: relative;
+	left: 30px;
+}
+
+.box{
+	width: 900px;
+	height: 300px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black;
+	margin: auto;
+	position: absolute;
+	top: 250px;
+	left: 50px;
+}
+
+.stages{
+	width: 50%;
+	height: 50%;
+}
+
+/* First Animation */
+@keyframes first-loading{
+	0%{
+		width: 0px;
+	}
+
+	70%{
+		width: 120px;
+		opacity: 100%;
+	}
+
+	100%{
+		width: 120px;
+		opacity: 0%;
+	}
+}
+
+.stage1{
+	float: left;
+	background-color: #d43500; /* darker red */
+	position: relative;
+}
+
+.loading1{
+	height: 22.5px;
+	width: 120px;
+	background-color: white;
+	opacity: 100%;
+	position: absolute;
+	top: 70px;
+	left: 35%;
+}
+
+.text1{
+	height: 15px;
+	width: 120px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: #eb3b00;
+	z-index: 10;
+	margin: 0;
+	position: relative;
+	top: 73.5px;
+	left: 35%;
+}
+
+.stage1:hover .loading1{
+	animation-name: first-loading;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+/* Second Animation */
+@keyframes second-loading{
+	0%{
+		width: 0px;
+	}
+
+	70%{
+		width: 120px;
+		opacity: 100%;
+	}
+
+	100%{
+		width: 120px;
+		opacity: 0%;
+	}
+}
+
+.stage2{
+	float: right;
+	background-color: #eb3b00; /* lighter red */
+	position: relative;
+}
+
+.loading2{
+	height: 15px;
+	width: 0px;
+	background-color: white;
+	opacity: 100%;
+	position: absolute;
+	top: 73.5px;
+	left: 35%;
+	z-index: 10;
+}
+
+.text2{
+	height: 15px;
+	width: 120px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.3);
+	z-index: 10;
+	margin: 0;
+	position: relative;
+	top: 73.5px;
+	left: 35%;
+}
+
+.stage2:hover .loading2{
+	animation-name: second-loading;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+/* Third Animation */
+@keyframes rotation{
+	0%{
+		transform: rotate(-180deg);
+	}
+
+	50%{
+		transform: rotate(-180deg);
+	}
+
+	100%{
+		
+	}
+}
+
+.stage3{
+	float: left;
+	background-color: #eb3b00; /* lighter red */
+	position: relative;
+}
+
+.dots{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	
+}
+
+.three-dots{
+	position: absolute;
+	top: 65px;
+	left: 40%;
+
+}
+
+.dot-1{
+	margin: 0 10px;
+	opacity: 40%;
+}
+
+.dot-2{
+
+}
+
+.dot-3{
+	margin: 0 10px;
+	opacity: 40%;
+}
+
+.stage3:hover .three-dots{
+	animation-name: rotation;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* Fourth Animation */
+@keyframes slide{
+	0%{
+		bottom: 0px;
+		left: 0px;
+	}
+
+	25%{
+		bottom: 50px;
+		left: 0px;
+	}
+
+	50%{
+		bottom: 50px;
+		left: 50px;
+	}
+
+	75%{
+		bottom: 0px;
+		left: 50px;
+	}
+
+	100%{
+		bottom: 0px;
+		left: 0px;
+	}
+}
+
+@keyframes filling{
+	0%{
+		width: 0px;
+		height: 40px;
+		opacity: 100%;
+	}
+
+	70%{
+		width: 40px;
+		height: 40px;
+		opacity: 100%;
+	}
+
+	100%{
+		opacity: 0%;
+	}
+}
+
+.stage4{
+	float: right;
+	background-color: #d43500; /* darker red */
+	position: relative;
+}
+
+.square-dot{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 45px;
+	left: 45%;
+}
+
+.square1{
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	background-color: white;
+	opacity: 30%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 5;
+}
+
+.square2{
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	background-color: white;
+	opacity: 0%;
+	z-index: 10;
+	position: absolute;
+	top: 10px;
+	left: 10px;	
+}
+
+.dot{
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.stage4:hover .dot{
+	animation-name: slide;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	
+}
+
+.stage4:hover .square2{
+	animation-name: filling;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+

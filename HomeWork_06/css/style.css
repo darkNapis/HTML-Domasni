@@ -1,0 +1,128 @@
+/* style.css */
+*{
+	box-sizing: border-box;
+}
+
+.box{
+	width: 500px;
+	height: 500px;
+	background-color: lightgray;
+	margin: 250px auto;
+}
+
+.row-01{
+	height: 75%;
+}
+
+.child-01{
+	background-color: gray;
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+.child-02{
+	background-color: red;
+	float: right;
+	width: 75%;
+	height: 100%;
+
+	/* border */
+	border-width: 10px 10px 10px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+.grandchild-01{
+	height: 40%;
+	background-color: #f0e9d5;
+
+	/* border */
+	border-width: 10px 0 10px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+.grandchild-02{
+	height: 60%;
+	background-color: #f0e9d5;
+
+	/* border */
+	border-width: 10px 0 10px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+.row-02{
+	height: 25%;
+}
+
+.parent-01{
+	background-color: gray;
+	float: left;
+	width: 95%;
+	height: 100%;
+
+	/* border */
+	border-width: 0 0 10px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+.grandparent-01-1{
+	background-color: darkblue;
+	float: left;
+	width: 27%;
+	height: 100%;
+
+	/* border */
+	border-width: 0 10px 0 0;
+	border-style: solid;
+	border-color: black;
+}
+
+.grandparent-01-2{
+	background-color: #f0e9d5;
+	float: left;
+	width: 73%;
+	height: 100%;
+
+	/* border */
+	border-width: 0 10px 0 0;
+	border-style: solid;
+	border-color: black;
+}
+
+.parent-02{
+	background-color: gray;
+	float: right;
+	width: 5%;
+	height: 100%;
+}
+
+.grandparent-02-1{
+	background-color: #f0e9d5;
+	float: left;
+	width: 100%;
+	height: 50%;
+	clear: both;
+	position: top;
+
+	/* border */
+	border-width: 0 10px 10px 0;
+	border-style: solid;
+	border-color: black;
+}
+
+.grandparent-02-2{
+	background-color: yellow;
+	float: right;
+	width: 100%;
+	height: 50%;
+
+	/* border */
+	border-width: 10px 10px 10px 0;
+	border-style: solid;
+	border-color: black;
+}
+

@@ -1,0 +1,103 @@
+@font-face{
+	src: url('../Fonts/Smoke Attack.ttf');
+	font-family: "Smoke Attack";
+}
+
+*{
+  	font-family: 'Alata', sans-serif;
+}
+
+h1{
+	font-family: "Smoke Attack", 'Alata', sans-serif;
+	font-size: 50px;
+	padding-top: 30px;
+	text-align: center;
+	transform: translate(-20%,-20%);
+}
+
+p{
+	font-family: 'Dosis', sans-serif;
+	font-size: 120;
+	text-transform: uppercase;
+}
+
+.bold-text{
+	font-weight: 700;
+	font-style: italic;
+	text-transform: capitalize;
+	text-decoration: none;
+	line-height: 40px;
+	text-align: justify;
+}
+
+.bold-text:first-letter{
+	font-size: 36px;
+}
+
+.bold-text:first-line{
+	background-color: rgb(23, 138, 122);
+}
+
+a{
+	text-decoration: underline;
+	color: darkred;
+	font-weight: bold;
+}
+
+article{
+	font-size: 30px;
+}
+
+article > p{
+	font-size: 0.8em;
+	letter-spacing: 3px;
+	word-spacing: 0px;
+}
+
+#vertical{
+	color: blue;
+	font-style: italic;
+	vertical-align: -8px;
+	text-shadow: 12px 12px 3px rgba(141, 32, 171, 0.7);
+}
+
+h3{
+  	font-family: 'Inconsolata', sans-serif;
+  	white-space: nowrap; 
+    width: 110px; 
+    overflow: hidden;
+    text-overflow: clip; 
+    border: 1px solid #000000;
+}
+
+div{
+	height:60px;
+	width: 860px;
+	border: 8px solid;
+}
+
+#gif{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 1.5px;
+}
+
+body{
+	background-color: skyblue;
+}
+
+h4{
+	font-family: 'Tomorrow', sans-serif;
+	color: purple;
+	text-align: center;
+	text-decoration-style: wavy;
+	background-color: rgb(235, 225, 52);		
+}
+
+iframe{
+	margin-left: 300px;
+}
+
+
+

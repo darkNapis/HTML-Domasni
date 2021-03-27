@@ -1,0 +1,98 @@
+/* style.css */
+
+body{
+	width: 1000px;
+	height: 500px;
+	margin: 200px auto;
+	background-color: lightgray;
+}
+
+.box{
+	width: 800px;
+	height: 400px;
+	background-color: red;
+	margin: auto;
+}
+
+/* animations */
+@keyframes slide{
+	0%{
+		left: 16px;
+	}
+
+	25%{
+		left: 16px;
+	}
+
+	50%{
+		left: 16px;
+	}
+
+	75%{
+		left: 16px;
+	}
+
+	100%{
+		left: 16px;
+	}
+}
+
+.box1{
+	width: 400px;
+	height: 200px;
+	background-color: darkred;
+	position: absolute;
+}
+
+.line1{
+	width: 80px;
+	height: 8px;
+	color: darkred;
+	background-color: white;
+	float: top;
+	position: relative;
+}
+
+.loading1{
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	color: white;
+	background-color: darkred;
+	float: top;
+	position: relative;
+}
+
+.line2{
+	width: 80px;
+	height: 8px;
+	color: darkred;
+	background-color: white;
+	float: top;
+	position: relative;
+}
+
+.box1:hover .line1{
+	/* animation */
+	animation-name: slide;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+.box1:hover .line2{
+	/* animation */
+	animation-name: slide;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
